@@ -55,19 +55,12 @@ string solve(vector<int>& arr) {
             }
         }
     }
-    vector<string> answer = {
-        "zero", "one", "two", "three", "four",
-        "five", "six", "seven", "eight", "nine",
-        "ten", "eleven", "twelve", "thirteen", "fourteen",
-        "fifteen", "sixteen", "seventeen", "eighteen", "nineteen",
-        "twenty"
-    };
-
     if(count > 100) {
         return "greater 100";
     }
 
-    return answer[count];
+    return numberToWord(count); 
+
 }
 
 
